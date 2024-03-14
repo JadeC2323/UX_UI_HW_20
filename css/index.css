@@ -1,0 +1,111 @@
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.logo {
+    width: 23%;
+    padding: 1%;
+}
+
+nav {
+    width: 72%;
+    padding: 1%;
+}
+
+ul {
+    width: 50%;
+    margin-left: auto;
+    text-align: right;
+}
+
+.logo img {
+    text-align: center;
+    display: blocl;
+    margin: 0 auto;
+}
+
+/* CSS for Hero Image */
+.heroImg {
+    height: 600px;
+    padding: 25 px;
+}
+.content {
+    width: 500px;
+    margin:0 auto;
+}
+
+/* CSS for Footer*/
+footer {
+    background-color: 373738;
+    padding: 25 px;
+}
+
+footer ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+footer ul li {
+    display: inline-block;
+    vertical-align:top;
+    padding: 0 10px;
+}
+
+/* Styles for the flex container of the My Skills section */
+.flexContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Styles for each skill card */
+.skillCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+}
+
+/* Style for My Work Section */
+#myWork-Grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+#myWork-Grid {
+    display: grid;
+    grid-template-rows: max-content 3fr 3fr 3fr; /*size of the rows */
+    padding: 20px;
+    margin: 20px;
+}
+
+.project-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+}
+
+@media only screen and (max-width: 600){
+    /* Your CSS Styles for your grid template area here */
+    .flexContainer {
+        flex-direction: column;
+    }
+
+    .flexContainer > .flexChild {
+        width: 100%;
+    }
+
+    .gridContainer {
+        grid-template-areas:
+          'header'
+          'main'
+          'sidebar'
+          'footer';
+        grid-template-rows: auto 1fr auto auto;
+        grid-template-columns: 100%;
+    }
+}
+    
